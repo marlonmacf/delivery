@@ -31,6 +31,64 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
 - **spring-cloud-netflix**: Upgrade the spring boot application to an Eureka Server application.
 
+## Security Server
+
+Authorization and Authentication with Spring Security OAuth:
+1. The client requests an authorization to the **resource owner**.
+2. The client receives a credential from the resource owner (oAuth2 standards).
+3. The client requests a token to the **authorization server**.
+4. The authorization server validates the client with the info from the resource server and returns the **token** access.
+5. The client request access to te resource server using the token.
+6. The resource server validates the token and grants access for the client.
+
+###### Dependencies
+
+- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
+- **spring-cloud-netflix**: Upgrade the spring boot application to an Eureka Server application.
+- **spring-cloud-starter-oauth2**: Including all the implementations the project needs to works as an oAuth2 server.
+- **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
+
+###### Schema
+
+```json
+user: [
+    { 
+        "_id" : "admin", 
+        "email" : "admin@admin.com", 
+        "password" : "$2a$10$r0RFDmpneBVryx.ihHK9gu6FFJQi4nTxQUqzdSTvrPpaKZMxigqpy", 
+        "activated" : true
+    }
+]
+```
+
+```json
+authority: [
+    { 
+        "_id" : "ROLE_USER"
+    },
+    { 
+        "_id" : "ROLE_ADMIN"
+    }
+]
+```
+
+```json
+user_authority: [
+    { 
+        "_id" : {
+            "username" : "admin", 
+            "authority" : "ROLE_USER"
+        }
+    },
+    { 
+        "_id" : {
+            "username" : "admin", 
+            "authority" : "ROLE_ADMIN"
+        }
+    }
+]
+```
+
 ...
 
 ## References
