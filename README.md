@@ -1,4 +1,4 @@
-# Microservices Architecture with Spring Cloud and Spring Boot
+# Microservices with Spring Cloud and Spring Boot
 
 ...
 
