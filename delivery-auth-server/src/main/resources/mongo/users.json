@@ -1,0 +1,8 @@
+{
+	"_id": "admin@admin.com",
+	"password": "1234567890",
+	"authorities": [
+        "user",
+        "admin"
+    ]
+}

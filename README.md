@@ -45,7 +45,8 @@ Authorization and Authentication with Spring Security OAuth:
 
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
 - **spring-cloud-netflix**: Upgrade the spring boot application to an Eureka Server application.
-- **spring-cloud-starter-oauth2**: Including all the implementations the project needs to works as an oAuth2 server.
+- **spring-boot-starter-web**: Starter for building web, including RESTful, applications using Spring MVC.
+- **spring-boot-starter-security**:  Starter for using Spring Security.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
 
 ...
@@ -57,3 +58,5 @@ https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-bo
 https://github.com/rafaelcam/delivery
 
 https://github.com/rafaelcam/delivery-configss
+
+https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-database/
