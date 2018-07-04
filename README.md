@@ -48,47 +48,6 @@ Authorization and Authentication with Spring Security OAuth:
 - **spring-cloud-starter-oauth2**: Including all the implementations the project needs to works as an oAuth2 server.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
 
-###### Schema
-
-```json
-user: [
-    { 
-        "_id" : "admin", 
-        "email" : "admin@admin.com", 
-        "password" : "$2a$10$r0RFDmpneBVryx.ihHK9gu6FFJQi4nTxQUqzdSTvrPpaKZMxigqpy", 
-        "activated" : true
-    }
-]
-```
-
-```json
-authority: [
-    { 
-        "_id" : "ROLE_USER"
-    },
-    { 
-        "_id" : "ROLE_ADMIN"
-    }
-]
-```
-
-```json
-user_authority: [
-    { 
-        "_id" : {
-            "username" : "admin", 
-            "authority" : "ROLE_USER"
-        }
-    },
-    { 
-        "_id" : {
-            "username" : "admin", 
-            "authority" : "ROLE_ADMIN"
-        }
-    }
-]
-```
-
 ...
 
 ## References

@@ -1,0 +1,8 @@
+[
+	{
+		"_id": "admin",
+		"email": "admin@admin.com",
+		"password": "$2a$10$r0RFDmpneBVryx.ihHK9gu6FFJQi4nTxQUqzdSTvrPpaKZMxigqpy",
+		"activated": true
+    }
+]
