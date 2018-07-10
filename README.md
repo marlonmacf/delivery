@@ -55,9 +55,9 @@ Authorization and Authentication with Spring Security.
 
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
-## Delivery Service
+## Ordering Service
 
-Delivery CRUD and integration with our authentication service.
+Order CRUD and integration with our authentication service.
 
 ###### Dependencies
 
