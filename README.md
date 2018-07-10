@@ -1,6 +1,6 @@
 # Microservices with Spring
 
-Micro services architecture using Spring Cloud and Spring Boot frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Gateway, through other dependencies like Eureka, Hystrix and Zuul from Netflix.
+Microservices architecture using Spring Cloud and Spring Boot frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Gateway, through other dependencies like Eureka, Hystrix and Zuul from Netflix.
 
 ## Configuration Server
 
@@ -39,13 +39,7 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 ## Security Server
 
-Authorization and Authentication with Spring Security OAuth:
-1. The client requests an authorization to the **resource owner**.
-2. The client receives a credential from the resource owner (oAuth2 standards).
-3. The client requests a token to the **authorization server**.
-4. The authorization server validates the client with the info from the resource server and returns the **token** access.
-5. The client request access to te resource server using the token.
-6. The resource server validates the token and grants access for the client.
+Authorization and Authentication with Spring Security.
 
 ###### Dependencies
 
@@ -72,3 +66,7 @@ https://github.com/rafaelcam/delivery
 https://github.com/rafaelcam/delivery-configss
 
 https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-database/
+
+http://www.frommknecht.net/spring-rest-mongodb/
+
+https://github.com/jeebb/oauth-demo
