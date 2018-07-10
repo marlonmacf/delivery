@@ -1,16 +1,18 @@
 # Microservices with Spring Cloud and Spring Boot
 
+Micro services architecture using Spring Cloud and Spring Boot frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Gateway, through other dependencies like Eureka, Hystrix and Zuul from Netflix.
+
 ## Configuration Server
 
 This project centralises all the configuration of our microservices in only one place.
 The configuration will be located remotely, on other GitHub project.
-The configuration server will read the information of those repositories and delivery through HTTP request.
+The configuration server will read the information of those repositories and delivery through HTTP requests.
 
 ###### Dependencies
 
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
 - **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
-- **spring-boot-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-cloud-config-server**: Central management for configuration via a git or svn backend.
 
 ###### Configurations
@@ -25,11 +27,15 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 ###### Dependencies
 
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
 - **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
-- **spring-boot-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
-- **spring-cloud-netflix**: Upgrade the spring boot application to an Eureka Server application.
+- **spring-cloud-starter-netflix-eureka-server**: Upgrade the spring boot application to an Eureka server application.
+
+###### Configurations
+
+- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
 ## Security Server
 
@@ -43,11 +49,17 @@ Authorization and Authentication with Spring Security OAuth:
 
 ###### Dependencies
 
-- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
-- **spring-cloud-netflix**: Upgrade the spring boot application to an Eureka Server application.
-- **spring-boot-starter-web**: Starter for building web, including RESTful, applications using Spring MVC.
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
+- **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
 - **spring-boot-starter-security**:  Starter for using Spring Security.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
+- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
+- **spring-cloud-starter-netflix-eureka-client**: Allow access to the Eureka server application.
+
+###### Configurations
+
+- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
 ...
 
