@@ -12,7 +12,7 @@ public class CustomUserDetailsSecurityConfig extends WebSecurityConfigurerAdapte
 
     @Bean
     public UserDetailsService mongoUserDetails() {
-        return new CustomerUserDetailsService();
+        return new CustomUserDetailsService();
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.demo.delivery.infrastructure.config;
 
 import com.mongodb.MongoClient;
+import com.mongodb.client.MongoDatabase;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -15,8 +16,16 @@ public class MongoConfiguration {
     @Value("${spring.data.mongodb.port}")
     private String dbPort;
 
+    @Value("${spring.data.mongodb.database}")
+    private String dbName;
+
     @Bean
-    public MongoClient createConnection() {
+    public MongoClient mongoClient() {
         return new MongoClient(dbHost + ":" + dbPort);
+    }
+
+    @Bean
+    public MongoDatabase mongoDatabase() {
+        return mongoClient().getDatabase(dbName);
     }
 }
