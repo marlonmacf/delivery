@@ -23,7 +23,7 @@ The configuration server will read the information of those repositories and del
 ## Service Registry (Eureka)
 
 Manager the status and the location of our microservices.
-Eureka is a REST Service, mainly used into AWS cloud to locate services to be able to do load balancing the service failover.
+Eureka is a REST Service, mainly used into AWS cloud to locate services to be able to do load balancing and service failover.
 
 ###### Dependencies
 
