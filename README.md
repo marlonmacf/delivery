@@ -55,6 +55,24 @@ Authorization and Authentication with Spring Security.
 
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
+## Delivery Service
+
+Delivery CRUD and integration with our authentication service.
+
+###### Dependencies
+
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
+- **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
+- **spring-boot-starter-security**:  Starter for using Spring Security.
+- **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
+- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
+- **spring-cloud-starter-netflix-eureka-client**: Allow access to the Eureka server application.
+
+###### Configurations
+
+- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
+
 ...
 
 ## References
