@@ -1,4 +1,4 @@
-# Microservices with Spring Cloud and Spring Boot
+# Microservices with Spring
 
 Micro services architecture using Spring Cloud and Spring Boot frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Gateway, through other dependencies like Eureka, Hystrix and Zuul from Netflix.
 
