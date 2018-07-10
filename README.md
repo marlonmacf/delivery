@@ -1,6 +1,6 @@
-# Microservices with Spring
+# Microservices with Spring, Netflix and MongoDB
 
-Microservices architecture using Spring Cloud and Spring Boot frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Gateway, through other dependencies like Eureka, Hystrix and Zuul from Netflix.
+Microservices architecture using Spring Boot, Data, Cloud and Security frameworks from Pivotal, with enphase on some concepts like Centralized Configuration, Circuit Braker, Service Registry and Services Gateway, through other dependencies like Netflix Eureka, Hystrix and Zuul.
 
 ## Configuration Server
 
@@ -55,9 +55,9 @@ Authorization and Authentication with Spring Security.
 
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
-## Ordering Service
+## Order Service (CRUD)
 
-Order CRUD and integration with our authentication service.
+Ordering CRUD and integration with our authentication service.
 
 ###### Dependencies
 
