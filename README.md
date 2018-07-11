@@ -88,3 +88,9 @@ https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-d
 http://www.frommknecht.net/spring-rest-mongodb/
 
 https://github.com/jeebb/oauth-demo
+
+https://malike.github.io/Spring-Security-OAuth2/
+
+https://ingini.org/2015/03/26/authentication-authorization-schema-design-with-mongodb/
+
+https://blog.csdn.net/FS_sky/article/details/77234315
