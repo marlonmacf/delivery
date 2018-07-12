@@ -1,10 +1,10 @@
 [
 	{
-		"username": "user",
-		"password": "user",
-		"roles": [
-            "ROLE_USER"
-        ],
-		"_class": "com.demo.delivery.infrastructure.entities.MongoUser"
-    }
+		"_id": "admin@admin.com",
+		"password": "1234567890",
+		"authorities": [
+			"user",
+			"admin"
+		]
+	}
 ]
