@@ -35,7 +35,7 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 ## Order Service (Security)
 
-Ordering CRUD with Authorization and Authentication with Spring Security.
+Ordering CRUD with basic Authorization and Authentication with Spring Security.
 
 ###### Dependencies
 
