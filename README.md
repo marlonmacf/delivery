@@ -10,9 +10,7 @@ The configuration server will read the information of those repositories and del
 
 ###### Dependencies
 
-- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
-- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
 - **spring-cloud-config-server**: Central management for configuration via a git or svn backend.
 
 ###### Configurations
@@ -27,9 +25,7 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 ###### Dependencies
 
-- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
-- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
 - **spring-cloud-starter-netflix-eureka-server**: Upgrade the spring boot application to an Eureka server application.
 
@@ -43,9 +39,7 @@ Ordering CRUD with Authorization and Authentication with Spring Security.
 
 ###### Dependencies
 
-- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
-- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
 - **spring-boot-starter-security**:  Starter for using Spring Security.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
@@ -62,7 +56,3 @@ Ordering CRUD with Authorization and Authentication with Spring Security.
 https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-1-b5c9288df66d
 
 https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-database/
-
-https://ingini.org/2015/03/26/authentication-authorization-schema-design-with-mongodb/
-
-http://www.frommknecht.net/spring-rest-mongodb/
