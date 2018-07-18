@@ -37,27 +37,9 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
-## Security Server
+## Order Service (Security)
 
-Authorization and Authentication with Spring Security.
-
-###### Dependencies
-
-- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
-- **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
-- **spring-boot-starter-test**: Unit test, integration test, Api test, etc.
-- **spring-boot-starter-security**:  Starter for using Spring Security.
-- **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
-- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
-- **spring-cloud-starter-netflix-eureka-client**: Allow access to the Eureka server application.
-
-###### Configurations
-
-- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
-
-## Order Service (CRUD)
-
-Ordering CRUD and integration with our authentication service.
+Ordering CRUD with Authorization and Authentication with Spring Security.
 
 ###### Dependencies
 
@@ -79,18 +61,8 @@ Ordering CRUD and integration with our authentication service.
 
 https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-1-b5c9288df66d
 
-https://github.com/rafaelcam/delivery
-
-https://github.com/rafaelcam/delivery-configss
-
 https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-database/
-
-http://www.frommknecht.net/spring-rest-mongodb/
-
-https://github.com/jeebb/oauth-demo
-
-https://malike.github.io/Spring-Security-OAuth2/
 
 https://ingini.org/2015/03/26/authentication-authorization-schema-design-with-mongodb/
 
-https://blog.csdn.net/FS_sky/article/details/77234315
+http://www.frommknecht.net/spring-rest-mongodb/
