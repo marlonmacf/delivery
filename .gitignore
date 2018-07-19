@@ -1,3 +1,11 @@
+### Gradle Wrapper ###
+.gradle
+bin
+build
+gradle
+gradlew
+gradlew.bat
+
 ### Maven Wrapper ###
 .mvn
 target
