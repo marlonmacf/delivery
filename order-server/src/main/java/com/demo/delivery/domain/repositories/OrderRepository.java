@@ -2,7 +2,7 @@ package com.demo.delivery.domain.repositories;
 
 import java.util.List;
 
-import com.demo.delivery.domain.components.OrderAdapter;
+import com.demo.delivery.domain.components.IOrderAdapter;
 import com.demo.delivery.domain.models.Order;
 import com.demo.delivery.infrastructure.entities.OrderDocument;
 import com.mongodb.client.MongoCollection;
@@ -19,7 +19,7 @@ public class OrderRepository implements IOrderRepository {
     private MongoDatabase mongoDatabase;
 
     @Autowired
-    private OrderAdapter orderAdapter;
+    private IOrderAdapter orderAdapter;
 
     @Override
     public Order save(Order order) {

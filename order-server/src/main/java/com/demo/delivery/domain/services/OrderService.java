@@ -3,7 +3,7 @@ package com.demo.delivery.domain.services;
 import java.util.List;
 
 import com.demo.delivery.domain.models.Order;
-import com.demo.delivery.domain.repositories.OrderRepository;
+import com.demo.delivery.domain.repositories.IOrderRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class OrderService implements IOrderService {
 
     @Autowired
-    private OrderRepository orderRepository;
+    private IOrderRepository orderRepository;
 
     @Override
     public Order save(Order order) {

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.demo.delivery.domain.models.Order;
-import com.demo.delivery.domain.services.OrderService;
+import com.demo.delivery.domain.services.IOrderService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -18,7 +18,7 @@ import org.springframework.http.ResponseEntity;
 public class OrderController {
 
     @Autowired
-    private OrderService orderService;
+    private IOrderService orderService;
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Order> save(@RequestBody Order order) {

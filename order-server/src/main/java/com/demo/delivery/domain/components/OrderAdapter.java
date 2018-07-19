@@ -12,7 +12,7 @@ import org.bson.types.ObjectId;
 import org.springframework.stereotype.Component;
 
 @Component
-public class OrderAdapter {
+public class OrderAdapter implements IOrderAdapter {
 
     public Order toDomain(Document document) {
         final ObjectId id = (ObjectId) document.get(OrderDocument.FieldName.ID);
