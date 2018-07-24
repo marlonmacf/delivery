@@ -11,6 +11,7 @@ The configuration server will read the information of those repositories and del
 ###### Dependencies
 
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-cloud-config-server**: Central management for configuration via a git or svn backend.
 
 ###### Configurations
@@ -26,6 +27,7 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 ###### Dependencies
 
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
 - **spring-cloud-starter-netflix-eureka-server**: Upgrade the spring boot application to an Eureka server application.
 
@@ -33,13 +35,31 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
-## Order Service (Security)
+## Auth Service (Security)
 
-Ordering CRUD with basic Authorization and Authentication with Spring Security.
+Authorization and Authentication with Spring Security.
 
 ###### Dependencies
 
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
+- **spring-boot-starter-security**:  Starter for using Spring Security.
+- **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
+- **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
+- **spring-cloud-starter-netflix-eureka-client**: Allow access to the Eureka server application.
+
+###### Configurations
+
+- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
+
+## Order Service (CRUD)
+
+Ordering CRUD - without security so far.
+
+###### Dependencies
+
+- **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
+- **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-security**:  Starter for using Spring Security.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
 - **spring-cloud-starter-config**: Allows us to easily define the config server host through the bootstrap.yml file.
