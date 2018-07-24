@@ -76,3 +76,5 @@ Ordering CRUD - without security so far.
 https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-1-b5c9288df66d
 
 https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-database/
+
+https://www.logicbig.com/tutorials/spring-framework/spring-security/authorization-config.html
