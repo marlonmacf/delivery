@@ -18,10 +18,11 @@ Eureka is a REST Service, mainly used into AWS cloud to locate services to be ab
 
 ## Auth Service
 
-Authorization server responsible for managing access tokens (OAuth 2 protocol).
+Security server responsible for managing normal authentication, authorization and access tokens using OAuth 2 protocol.
 
-- In order to use MongoDB, custom service classes were required to handle the tokens.
-- We registered a user for the normal security.
+- In order to use MongoDB, custom service classes were required to persiste the tokens.
+- Registered a user to allow normal server authentication and authorization.
+- Registered a client with "authorization_code" amd "refresh_token" grant types.
 
 ## Dependencies
 
@@ -38,9 +39,7 @@ Authorization server responsible for managing access tokens (OAuth 2 protocol).
 - **application.yml**: This file will override spring boot configs on the application initialization.
 - **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
 
-...
-
-## References
+### References
 
 https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-1-b5c9288df66d
 
