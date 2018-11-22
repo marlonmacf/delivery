@@ -29,10 +29,12 @@ Security server responsible for managing normal authentication, authorization an
 - **spring-boot-starter-web**: Full-stack web development with Tomcat and Spring MVC.
 - **spring-boot-starter-actuator**: Production ready features to help you monitor and manage your application.
 - **spring-boot-starter-data-mongodb**: JDBC driver for MongoDB NoSQL Database.
+- **spring-boot-starter-freemarker**: Starter for building MVC web applications using FreeMarker views template engine.
 - **spring-cloud-config-server**: Central management for configuration via a git or svn backend.
 - **spring-cloud-starter-config**: Define the config server host through the bootstrap.yml file.
 - **spring-cloud-starter-netflix-eureka-server**: Upgrade the spring boot application to an Eureka server application.
 - **spring-cloud-starter-netflix-eureka-client**: Allow access to the Eureka server application.
+- **spring-security-oauth2**: Module for providing OAuth2 support to Spring Security
 
 ## Configurations
 
