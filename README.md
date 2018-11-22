@@ -49,4 +49,6 @@ https://egkatzioura.com/2016/09/27/spring-boot-with-spring-security-with-nosql-d
 
 https://www.logicbig.com/tutorials/spring-framework/spring-security/authorization-config.html
 
+https://auth0.com/docs/api-auth/tutorials/authorization-code-grant#4-verify-the-token
+
 https://github.com/jeebb/oauth-demo

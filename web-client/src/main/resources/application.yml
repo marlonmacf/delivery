@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8282/eureka/
+
+spring:
+  freemarker:
+    cache: false
+    suffix: .html
+
+oauth:
+  auth:
+    url: http://localhost:8383/oauth/authorize?client_id=web-client&response_type=code
+  token:
+    url: http://localhost:8383/oauth/token?grant_type=authorization_code&code=%s
+    refresh:
+      url: http://localhost:8383/oauth/token?grant_type=refresh_token&refresh_token=%s
+    expire: 7200
+  id:
+    secret: d2ViLWNsaWVudDp3ZWItY2xpZW50LXNlY3JldA== # Base64 encoded value of web-client:web-client-secret

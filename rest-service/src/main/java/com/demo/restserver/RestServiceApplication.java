@@ -1,16 +1,14 @@
-package com.demo.configserver;
+package com.demo.restserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@EnableConfigServer
 @EnableEurekaClient
 @SpringBootApplication
-public class ConfigurationApplication {
+public class RestServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigurationApplication.class, args);
+		SpringApplication.run(RestServiceApplication.class, args);
 	}
 }

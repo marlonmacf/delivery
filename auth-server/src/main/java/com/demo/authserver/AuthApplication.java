@@ -33,7 +33,7 @@ public class AuthApplication {
 
         MongoClientDetails clientDetails = new MongoClientDetails();
         clientDetails.setClientId("web-client");
-        clientDetails.setClientSecret("{noop}secret");//"web-client-secret");
+        clientDetails.setClientSecret("web-client-secret");
         clientDetails.setSecretRequired(true);
         clientDetails.setResourceIds(Sets.newHashSet("project-man"));
         clientDetails.setScope(Sets.newHashSet("call-services"));
