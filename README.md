@@ -39,7 +39,7 @@ Security server responsible for managing normal authentication, authorization an
 ## Configurations
 
 - **application.yml**: This file will override spring boot configs on the application initialization.
-- **bootstrap.yml**: Used to define parent configs for the application initialization, like the spring cloud app name or the server config conection.
+- **bootstrap.yml**: Used to define parent configs for the application initialization.
 
 ### References
 
