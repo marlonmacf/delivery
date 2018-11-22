@@ -1,11 +1,6 @@
 
 # JAVA - Microservices / SOA (Service Oriented Arquitecture)
 
-
-![Microservices Architecture] (https://cdn-images-1.medium.com/max/1600/1*NoQZ1xHuZPuObIKHYr9RBw.png)
-
-![Authentication and Authorization] (https://cdn-images-1.medium.com/max/600/1*L39IIBSyftd31HjJQIgaBg.png)
-
 ## Microservices with Spring Cloud (Netflix Eureka), Security (OAuth2) and MongoDB
 
 Microservices architecture using Spring Boot (Web, Actuator, DataMongoDB, Freemarker), Spring Cloud (ConfigServer, ConfigClient, EurekaServer, EurekaClient) and Spring Securiy (OAuth2). With focus on some concepts like Centralized Configuration, Circuit Braker, Service Registry, Service Discovery and Services Gateway, through other dependencies like Netflix Eureka, Hystrix and Zuul.
