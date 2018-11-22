@@ -22,7 +22,7 @@ Security server responsible for managing normal authentication, authorization an
 
 - In order to use MongoDB, custom service classes were required to persiste the tokens.
 - Registered a user to allow normal server authentication and authorization.
-- Registered a client with "authorization_code" amd "refresh_token" grant types.
+- Registered a client with "authorization_code" and "refresh_token" grant types.
 
 ## Dependencies
 
